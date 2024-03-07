@@ -5,20 +5,27 @@ programa
 	{
 	//Entrada de dados
 	
-		real lados
-		real area
+		cadeia nome
+		inteiro idade
+		cadeia cidade
 
-		escreva("Digite o tamanho dos lados do quadrado: ")
-		leia(lados)
+		escreva("Digite seu nome Completo: ")
+		leia(nome)
 
+		escreva("Digite sua idade: ")
+		leia(idade)
+
+		escreva("Digite sua cidade: ")
+		leia(cidade)
+		
 	//Processamento de dados
-
-		area = lados * lados
 	
+
 	//Saida de dados
 
-		escreva("A área do seu quadrado é: " + area)
-	
+		escreva("Nome: " + nome)
+		escreva("\nIdade: " + idade)
+		escreva("\nCidade: " + cidade)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -26,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 278; 
+ * @POSICAO-CURSOR = 324; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

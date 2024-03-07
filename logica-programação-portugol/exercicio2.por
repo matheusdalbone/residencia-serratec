@@ -4,28 +4,24 @@ programa
 	funcao inicio()
 	{
 	//Entrada de dados
-	
-		cadeia nome
-		inteiro idade
-		cadeia cidade
+		inteiro numeroUm
+		inteiro numeroDois
+		inteiro soma
 
-		escreva("Digite seu nome Completo: ")
-		leia(nome)
+		escreva("Digite o primeiro numero: ")
+		leia(numeroUm)
 
-		escreva("Digite sua idade: ")
-		leia(idade)
-
-		escreva("Digite sua cidade: ")
-		leia(cidade)
+		escreva("Digite o segundo numero: ")
+		leia(numeroDois)
 		
 	//Processamento de dados
-	
+
+		soma = numeroUm + numeroDois
 
 	//Saida de dados
 
-		escreva("Nome: " + nome)
-		escreva("\nIdade: " + idade)
-		escreva("\nCidade: " + cidade)
+		escreva("A soma do " + numeroUm + " e do numero " + numeroDois + " é igual a: " + soma)
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -33,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 324; 
+ * @POSICAO-CURSOR = 399; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

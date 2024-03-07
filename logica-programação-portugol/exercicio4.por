@@ -4,21 +4,21 @@ programa
 	funcao inicio()
 	{
 	//Entrada de dados
-		
-		inteiro numero
-		inteiro antecessor
-		inteiro sucessor
+	
+		real lados
+		real area
 
-		escreva("Digite o numero que você deseja saber o sucessor e o antecessor: ")
-		leia(numero)
+		escreva("Digite o tamanho dos lados do quadrado: ")
+		leia(lados)
+
 	//Processamento de dados
 
-		antecessor = numero - 1
-		sucessor = numero + 1
-		
+		area = lados * lados
+	
 	//Saida de dados
 
-		escreva("O seu numero é o " + numero + ", o sucessor dele é " + sucessor + ", e o antecessor dele é " + antecessor + ".")
+		escreva("A área do seu quadrado é: " + area)
+	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -26,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 434; 
+ * @POSICAO-CURSOR = 278; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
