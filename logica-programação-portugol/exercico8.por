@@ -1,5 +1,6 @@
 programa
 {
+	inclua biblioteca Matematica --> m
 	
 	funcao inicio()
 	{
@@ -20,6 +21,7 @@ programa
 	//Processamento de dados
 
 		media = (notaUm + notaDois + notaTres) / 3
+		media = m.arredondar(media, 2)
 		
 	//Saida de dados
 
@@ -31,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 450; 
+ * @POSICAO-CURSOR = 104; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

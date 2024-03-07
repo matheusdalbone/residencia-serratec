@@ -1,12 +1,11 @@
 programa
 {
+	inclua biblioteca Calendario --> c
 	
 	funcao inicio()
 	{
 
 	//Entrada de dados
-	
-		const inteiro anoAtual = 2024
 		inteiro anoNascimento
 		inteiro idade
 
@@ -15,7 +14,7 @@ programa
 		
 	//Processamento de dados
 
-		idade = anoAtual - anoNascimento
+		idade = c.ano_atual() - anoNascimento
 		
 	//Saida de dados
 
@@ -27,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 280; 
+ * @POSICAO-CURSOR = 281; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
