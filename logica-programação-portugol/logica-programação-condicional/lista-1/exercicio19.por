@@ -29,14 +29,14 @@ programa
 				desconto = litros * alcool * 0.03
 				valorTotal = litros * alcool - desconto
 				valorTotal = m.arredondar(valorTotal, 2)
-				escreva("Valor depois do desconto: " + valorTotal )
+		
 			}
 			senao
 			{
 				desconto = litros * alcool * 0.05
 				valorTotal = litros * alcool - desconto
 				valorTotal = m.arredondar(valorTotal, 2)
-				escreva("Valor depois do desconto: " + valorTotal )
+	
 			}
 		pare
 
@@ -46,14 +46,14 @@ programa
 				desconto = litros * gasolina * 0.04
 				valorTotal = litros * gasolina - desconto
 				valorTotal = m.arredondar(valorTotal, 2)
-				escreva("Valor depois do desconto: " + valorTotal )
+
 			}
 			senao
 			{
 				desconto = litros * gasolina * 0.06
 				valorTotal = litros * gasolina - desconto
 				valorTotal = m.arredondar(valorTotal, 2)
-				escreva("Valor depois do desconto: " + valorTotal )
+				
 			}
 		pare
 
@@ -65,6 +65,8 @@ programa
 		}
 
 	//Saida
+
+		escreva("Valor depois do desconto: " + valorTotal )
 		
 	}
 }
@@ -73,7 +75,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1426; 
+ * @POSICAO-CURSOR = 188; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
