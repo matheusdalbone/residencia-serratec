@@ -8,5 +8,5 @@
  3. [Exercícios - Looping](logica-programação-portugol/logica-programação-looping)
  4. [Exercícios - Vetores/Matrizes](logica-programação-portugol/logica-programação-matriz)
  5. [Exercícios - Funções](logica-programação-portugol/logica-programação-funções)
- 6. [Projeto Final - Lógica de Programação](logica-programação-portugol/gerenciamento-de-turma.por)
+ 6. [Projeto final - Sistema de Gerenciamento de Turma](logica-programação-portugol/gerenciamento-de-turma.por)
 
