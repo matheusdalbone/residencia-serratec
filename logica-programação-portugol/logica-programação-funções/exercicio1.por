@@ -1,27 +1,13 @@
 programa
 {
-	
+	inclua biblioteca Matematica --> m
 	funcao inicio()
 	{
-		inteiro n1, n2
-		logico ehPrimo
+		escreva(calcularVolume(2.0))
+	}
 
-		leia(n1)
-		leia(n2)
-
-		para(inteiro i = n1; i <= n2; i++) {
-			ehPrimo = verdadeiro
-			para(inteiro j = 2; j<=i/2; j++) {
-				se(i%j == 0){
-					ehPrimo = falso
-					pare
-				}	
-			}
-
-			se(ehPrimo == verdadeiro){
-				escreva(i + " primo\n")
-			}
-		}
+	funcao real calcularVolume(real raio) {
+		retorne (4 * m.PI * (raio * raio * raio)) / 3
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -29,7 +15,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 247; 
+ * @POSICAO-CURSOR = 202; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

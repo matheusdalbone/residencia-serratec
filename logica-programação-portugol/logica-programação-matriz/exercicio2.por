@@ -3,23 +3,14 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro n1, n2
-		logico ehPrimo
+		inteiro mat[5][5]
 
-		leia(n1)
-		leia(n2)
-
-		para(inteiro i = n1; i <= n2; i++) {
-			ehPrimo = verdadeiro
-			para(inteiro j = 2; j<=i/2; j++) {
-				se(i%j == 0){
-					ehPrimo = falso
-					pare
-				}	
-			}
-
-			se(ehPrimo == verdadeiro){
-				escreva(i + " primo\n")
+		para(inteiro linha = 0; linha < 5; linha++){
+			para(inteiro coluna = 0; coluna < 5; coluna++){
+				se(linha == coluna)
+					mat[linha][coluna] = 1
+				senao
+					mat[linha][coluna] = 0
 			}
 		}
 	}
@@ -29,7 +20,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 247; 
+ * @POSICAO-CURSOR = 250; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
