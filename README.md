@@ -13,4 +13,5 @@
 
 **Banco de Dados (PostgreSQL) - Serratec**
 
- - [Projeto Final - Banco de Dados](banco-de-dados)
+ - [Projeto Final de Banco de Dados](banco-de-dados)
+ - [(Repositório Principal)](https://github.com/KayqueLucas/Projeto_Banco_De_Dados)
