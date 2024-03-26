@@ -79,7 +79,7 @@ programa
 				escreva("\nNota " + (i + 1) + ": ")
 				leia(notas[i])
 				se(notas[i] < 0 ou notas[i] > 10)
-					escreva("\nDigite um valor valido( entre 0 e 10 ) ")
+					escreva("\nDigite um valor válido (entre 0 e 10): ")
 			}enquanto(notas[i] < 0 ou notas[i] > 10)
 		}
 	}
@@ -90,7 +90,7 @@ programa
 			escreva("\nNota: ")
 			leia(nota)
 			se(nota < 0 ou nota > 10)
-				escreva("\nDigite um valor valido( entre 0 e 10 ) ")
+				escreva("\nDigite um valor válido (entre 0 e 10): ")
 		}enquanto(nota < 0 ou nota > 10)
 		
 		retorne nota
@@ -110,30 +110,29 @@ programa
 			se(listaAlunos[i][0] == "")
 			{
 				ID = i + 1
-				escreva("Digite o nome do aluno: ")
+				escreva("Digite o nome do(a) aluno(a): ")
 				leia(nome)
 
 				faca{	
 					escreva("\nDigite o mês de nascimento: ")
 					leia(mesNascimento)
 					se(mesNascimento < 1 ou mesNascimento > 12)
-						escreva("\nMês inválido! Digite um mês existente!")
+						escreva("\nMês inválido. Digite um mês existente.")
 						
 				}enquanto(mesNascimento < 1 ou mesNascimento > 12)
 			
-				escreva("Digite a turma: ")
+				escreva("\nDigite a turma: ")
 				leia(turma)
 	
-				escreva("Digite as notas do aluno: ")
+				escreva("\nDigite as notas do(a) aluno(a): \n")
 				validaNotas(notas)
 
-				//media = mediaAluno(listaAlunos, listaAlunos[i][0])
 				media = Matematica.arredondar(((notas[0] + notas[1] + notas[2]) / 3), 2)
 
 				se(media >= 6)
-					situacao = "APROVADO"
+					situacao = "APROVADO(A)"
 				senao
-					situacao = "REPROVADO"
+					situacao = "REPROVAD(A)"
 								
 				listaAlunos[i][0] = nome
 				listaAlunos[i][1] = Tipos.inteiro_para_cadeia(mesNascimento, 10)
@@ -152,7 +151,7 @@ programa
 			}
 			se((i+1) == linhas)
 			{
-				escreva("Banco de dados atingiu o limite maximo! Coloca mais memoria aê!!!!!\n")
+				escreva("Banco de dados atingiu o limite máximo! Coloca mais memória aê!!!!!\n")
 				Util.aguarde(2500)
 			}
 		}
@@ -187,24 +186,24 @@ programa
 
 		se(mediaGeral < 6)
 		{
-			escreva("\nA media geral dessa turma é: " + mediaGeral)
-			escreva("\nA média dessa turma é classificada como: Ruim.")
+			escreva("\nA média dessa turma é: " + mediaGeral)
+			escreva("\nO rendimento dessa turma é classificado como: Ruim.")
 		}
 		senao se(mediaGeral < 8)
 		{
-			escreva("\nA media geral dessa turma é: " + mediaGeral)
-			escreva("\nA média dessa turma é classificada como: Médio.")
+			escreva("\nA média dessa turma é: " + mediaGeral)
+			escreva("\nO rendimento dessa turma é classificado como: Médio.")
 		}
 
 		senao se(mediaGeral < 10)
 		{
-			escreva("\nA media geral dessa turma é: " + mediaGeral)
-			escreva("\nA média dessa turma é classificada como: Bom!")
+			escreva("\nA média dessa turma é: " + mediaGeral)
+			escreva("\nO rendimento geral dessa turma é classificado como: Bom!")
 		}
 		senao
 		{
-			escreva("\nA media geral dessa turma é: " + mediaGeral)
-			escreva("\nA média dessa turma é classificada como: Execelente!")
+			escreva("\nA média dessa turma é: " + mediaGeral)
+			escreva("\nO rendimento geral dessa turma é classificado como: Execelente!")
 		}
 		
 		escreva("\n\nPressione enter para continuar. ")
@@ -222,7 +221,7 @@ programa
 		leia(nome)	
 
 		escreva("\n----------------------------------------------")
-		escreva("\n          SITUAÇÃO DO ALUNO")
+		escreva("\n          SITUAÇÃO DO(A) ALUNO(A)")
 		escreva("\n----------------------------------------------")
 		para(inteiro i=0; i<linhas; i++)
 		{
@@ -258,8 +257,8 @@ programa
 			se(listaAlunos[i][0] != "")
 			{		
 				escreva("\nID:" + listaAlunos[i][8])
-				escreva("\nAluno: " + listaAlunos[i][0])
-				escreva("\nMês Nascimento: " + listaAlunos[i][1])
+				escreva("\nAluno(a): " + listaAlunos[i][0])
+				escreva("\nMês de nascimento: " + listaAlunos[i][1])
 				escreva("\nTurma: " + listaAlunos[i][2])
 				escreva("\nNota 1: " + Tipos.cadeia_para_real(listaAlunos[i][3]))
 				escreva("\nNota 2: " + Tipos.cadeia_para_real(listaAlunos[i][4]))
@@ -288,7 +287,7 @@ programa
 		escreva("\n             EDIÇÃO DE ALUNO")
 		escreva("\n------------------------------------------")
 		
-		escreva("\nQual aluno gostaria de editar: ")
+		escreva("\nQual aluno(a) gostaria de editar? ")
 		leia(nomePesquisa)
 		
 		para(inteiro i = 0; i < linhas; i++)
@@ -300,9 +299,9 @@ programa
 				enquanto(nao parar)
 				{
 					faca{
-						escreva("\nQual informação gostaria de editar: ")
+						escreva("\nQual informação gostaria de editar? ")
 						escreva("\n1 - Nome")
-						escreva("\n2 - Mês nascimento")
+						escreva("\n2 - Mês de nascimento")
 						escreva("\n3 - Turma")
 						escreva("\n4 - Nota 1")
 						escreva("\n5 - Nota 2")
@@ -312,7 +311,7 @@ programa
 		
 						leia(opcao)
 						se(opcao < 1 ou opcao > 7)
-							escreva("Opção inválida")
+							escreva("Opção inválida.")
 	
 					}enquanto(opcao < 1 ou opcao > 7)
 	
@@ -331,7 +330,7 @@ programa
 								escreva("\nDigite o novo mês: ")
 								leia(novoMes)
 								se(novoMes < 1 ou novoMes > 12)
-									escreva("\nMês inválido! Digite um mês existente!")
+									escreva("\nMês inválido. Digite um mês existente.")
 						
 								}enquanto(novoMes < 1 ou novoMes > 12)
 							listaAlunos[i][1] = Tipos.inteiro_para_cadeia(novoMes, 10)
@@ -370,9 +369,9 @@ programa
 			novaMedia = mediaAluno(listaAlunos, nomePesquisa)
 			
 			se(novaMedia >= 6)
-				listaAlunos[i][7] = "APROVADO"
+				listaAlunos[i][7] = "APROVADO(A)"
 			senao
-				listaAlunos[i][7] = "REPROVADO"
+				listaAlunos[i][7] = "REPROVADO(A)"
 				
 			listaAlunos[i][6] = Tipos.real_para_cadeia(novaMedia)
 			}
@@ -384,7 +383,7 @@ programa
 		inteiro mesNascimento
 		cadeia x
 
-		escreva("Digite um mês (1 a 12) para saber os aniversariantes: ")
+		escreva("Digite um mês (de 1 a 12) para saber os aniversariantes: ")
 		leia(mesNascimento)
 		
 		escreva("\n-------------------------------------------")
@@ -467,7 +466,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 11071; 
+ * @POSICAO-CURSOR = 10669; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
