@@ -11,7 +11,7 @@
  - [Exercícios - Funções](logica-programação-portugol/logica-programação-funções)
  - [Projeto final - Sistema de Gerenciamento de Turma](logica-programação-portugol/gerenciamento-de-turma.por)
 
-**Banco de Dados (PostgreSQL) - Serratec**
+**Banco de Dados ( PostgreSQL ) - Serratec**
 
  - [Projeto Final de Banco de Dados](banco-de-dados)
  - [(Repositório Principal)](https://github.com/KayqueLucas/Projeto_Banco_De_Dados)
